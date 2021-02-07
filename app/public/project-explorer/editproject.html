@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Explorer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- *Navigation Menu -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Project Explorer</a>
+
+            <ul class="navbar-nav ml-auto order-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0 order-1" name="searchForm">
+                <input class="form-control mr-sm-2 order-1" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 order-2" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav order-3">
+                <li class="nav-item ">
+                    <a class="nav-link" href="createproject.html">Submit</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="mx-auto w-75 my-5">
+        <section id="p-details">
+            <header>
+                <h2>Project 1</h2>
+            </header>
+            <div class="container">
+                <div class="row bg-light my-2 py-2">
+                    <div class="col-md-3">
+                        <p class="mb-0">Created By</p>
+                        <p class="mt-0">Jane Doe</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-0">Date Created</p>
+                        <p class="mt-0">20-08-30</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-0">Last Updated</p>
+                        <p class="mt-0">20-08-30</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <form action="" name="submitProject">
+                        <header>
+                            <h2>Edit Project</h2>
+                        </header>
+
+                        <label for="p-name" class="col-form-lable my-3">Project Name:</label>
+                        <br>
+                        <input type="text" name="name" id="p-name" class="form-control" placeholder="Project 1">
+
+
+                        <label for="p-abstract" class="col-form-lable my-3">Project Abstract:</label>
+                        <textarea name="abstract" id="p-abstract" class="form-control" cols="30" rows="10" type="text" placeholder="Project 1 is a very interesting project"></textarea>
+
+                        <label for="author" class="col-form-lable my-3">Author(s)</label>
+                        <input type="text" name="authors" id="author" class="form-control" placeholder="Ade Chris">
+
+                        <label for="tag" class="col-form-lable my-3">Tag(s)</label>
+                        <input type="text" name="tags" id="tag" class="form-control" placeholder="#javascript">
+
+                        <button class="btn btn-primary d-block mt-3">Save</button>
+
+                    </form>
+
+                </div>
+                <div class="col">
+                    <h2>Manage Project files</h2>
+                    <hr>
+
+                    <div class="my-4">
+                        <form class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Click to open file browser</label>
+                        </form>
+                        <hr>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5> Project files</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">No file uploaded yet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- *Footer -->
+    <footer class="footer mt-auto pt-3 pb-5 container" style="background-color: #F8F9FA;">
+        <div class="container">
+            <p class="float-right"><span class="text-muted">Project Explorer &copy; 2020</span> Edconnect</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

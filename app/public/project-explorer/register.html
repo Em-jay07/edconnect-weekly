@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Explorer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- *Navigation Menu -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Project Explorer</a>
+
+            <ul class="navbar-nav ml-auto order-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0 order-1" name="searchForm">
+                <input class="form-control mr-sm-2 order-1" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 order-2" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav order-3">
+                <li class="nav-item ">
+                    <a class="nav-link" href="createproject.html">Submit</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="mx-auto w-75 my-5 container">
+        <h1>Sign up</h1>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email address">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Your Password">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="programs">Program</label>
+                <select name="program" id="programs" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="computer_information_systems">Computer Information Systems</option>
+                    <option value="computer_technology">Computer Technology</option>
+                </select>
+            </div>
+
+            <div class="col-md-7">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="matric-no">Matriculation Number</label>
+                        <input type="text" name="matricNumber" id="matric-no" class="form-control" placeholder="e.g. 16/55/2020">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="grad-year">Graduation Year</label>
+                        <select name="graduationYear" class="form-control" id="grad-year">
+                            <option selected>Choose...</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+    <!-- *Footer -->
+    <footer class="footer mt-auto pt-3 pb-5 container " style="background-color: #F8F9FA;">
+        <div class="container">
+            <p class="float-right"><span class="text-muted">Project Explorer &copy; 2020</span> Edconnect</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
