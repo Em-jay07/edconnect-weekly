@@ -10,153 +10,122 @@
 </head>
 
 <body>
-    <!-- *Navigation Menu -->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Project Explorer</a>
 
-            <ul class="navbar-nav ml-auto order-4">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.html">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-
-                <!-- <li class="nav-item ">
-                    <a class="nav-link" href="createproject.html">Submit</a>
-                </li> -->
-            </ul>
-            <form class="form-inline my-2 my-lg-0 order-1" name="searchForm">
-                <input class="form-control mr-sm-2 order-1" type="search" placeholder="Search Projects" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0 order-2" type="submit">Search</button>
+    <div>
+        <!-- *Navigation Menu -->
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <a href="index.html" class="navbar-brand">Project Explorer</a>
+            <form method="get" action="search.html" class="form-inline">
+                <input type="text" placeholder="Search Projects" name="search" class="mr-sm-2 form-control" />
+                <button type="submit" class="btn btn-outline-light">Search</button>
             </form>
-            <ul class="navbar-nav order-3">
-                <li class="nav-item ">
-                    <a class="nav-link" href="createproject.html">Submit</a>
-                </li>
-            </ul>
+            <div class="mr-auto navbar-nav">
+                <a href="createproject.html" class="nav-link">Submit</a>
+            </div>
+            <div class="navbar-nav">
+                <a href="register.html" class="nav-link">Sign up</a
+            ><a href="login.html" class="nav-link">Login</a>
+            </div>
         </nav>
-    </header>
 
-    <!-- *Header -->
-    <!-- <header>
-        <h2>One Stop Database For Academic Projects</h2>
-    </header> -->
-
-    <!-- *Main Content -->
-    <main>
-        <div class="container mt-3">
+        <!-- *Welcome page -->
+        <div class="mt-3 container">
             <div class="jumbotron">
-                <h1 class="display-4">Welcome to Project Explorer</h1>
-                <p class="lead">This application allows you to explore various academic projects. You can search, upload and browse projects</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
-                <a class="btn btn-secondary btn-lg" href="login.html" role="button">Login</a>
+                <h1>Welcome to Project Explorer</h1>
+                <p>
+                    Project Explorer is a repository for final year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.
+                </p>
+                <p>
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                </p>
             </div>
         </div>
 
-        <!-- *Cards -->
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi illum tempora saepe, odio eveniet soluta velit dolores inventore repellendus. Similique?</p>
-                        </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi illum tempora saepe, odio eveniet soluta velit dolores inventore repellendus. Similique?</p>
-                        </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
+        <!-- *Project Titles -->
+        <div class="container mb-3">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewproject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi dolorem excepturi. Adipisci cum tempore similique voluptatem sit explicabo aspernatur?</p>
-                        </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
+
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewproject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi illum tempora saepe, odio eveniet soluta velit dolores inventore repellendus. Similique?</p>
+
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewproject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
                         </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewproject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- *Footer -->
+        <footer class="container">
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="justify-content-end navbar-collapse collapse">
+                    <span class="navbar-text">Project Explorer © 2020·
+                <a href="https://edconnect.ng/" target="_blank">Edconnect</a></span>
+                </div>
+            </nav>
+        </footer>
+    </div>
 
-
-        <!-- <header>
-            <h2>Project List</h2>
-        </header>
-        <h3>Project 1</h3>
-        <ul>
-            <li>Name: Project 1</li>
-            <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt earum tempora eveniet id ex, ea perspiciatis non distinctio mollitia nam exercitationem ad modi neque reprehenderit, nobis quaerat, harum iste.</li>
-            <li>Program: Computer Science</li>
-            <li>Year: 2018</li>
-        </ul>
-        <h3>Project 2</h3>
-        <ul>
-            <li>Name: Project 2</li>
-            <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt earum tempora eveniet id ex, ea perspiciatis non distinctio mollitia nam exercitationem ad modi neque reprehenderit, nobis quaerat, harum iste.</li>
-            <li>Program: Computer Science</li>
-            <li>Year: 2019</li>
-        </ul>
-        <h3>Project 3</h3>
-        <ul>
-            <li>Name: Project 3</li>
-            <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt earum tempora eveniet id ex, ea perspiciatis non distinctio mollitia nam exercitationem ad modi neque reprehenderit, nobis quaerat, harum iste.</li>
-            <li>Program: Computer Science</li>
-            <li>Year: 2020</li>
-        </ul> -->
-    </main>
-
-    <!-- *Footer -->
-    <footer class="footer mt-auto pt-3 pb-5 container " style="background-color: #F8F9FA;">
-        <div class="container">
-            <p class="float-right"><span class="text-muted">Project Explorer &copy; 2020</span> Edconnect</p>
-        </div>
-    </footer>
 </body>
 
 </html>

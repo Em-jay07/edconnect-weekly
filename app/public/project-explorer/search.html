@@ -5,118 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Explorer</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
     <!-- *Navigation Menu -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Project Explorer</a>
-
-            <ul class="navbar-nav ml-auto order-4">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="search.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.html">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0 order-1" name="searchForm">
-                <input class="form-control mr-sm-2 order-1" type="search" placeholder="Search Projects" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0 order-2" type="submit">Search</button>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <a href="index.html" class="navbar-brand">Project Explorer</a>
+            <form method="get" action="search.html" class="form-inline">
+                <input type="text" placeholder="Search Projects" name="search" class="mr-sm-2 form-control" />
+                <button type="submit" class="btn btn-outline-light">Search</button>
             </form>
-            <ul class="navbar-nav order-3">
-                <li class="nav-item ">
-                    <a class="nav-link" href="createproject.html">Submit</a>
-                </li>
-            </ul>
+            <div class="mr-auto navbar-nav">
+                <a href="createproject.html" class="nav-link">Submit</a>
+            </div>
+            <div class="navbar-nav">
+                <a href="register.html" class="nav-link">Sign up</a
+            ><a href="login.html" class="nav-link">Login</a>
+            </div>
         </nav>
     </header>
 
 
-    <main>
-        <section class="container my-5">
-            <header>
-                <h2>Project Gallery</h2>
-            </header>
-            <form class="container bg-light p-3">
-                <div class="form-row">
-                    <div class="col-sm-7">
-                        <input type="text" class="form-control" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group row">
-                            <label for="search" class="col-form-label col-sm-4 text-right">Search By</label>
-                            <div class="col-sm-8">
-                                <select name="searchType" class="form-control" id="search">
-                                    <option value="Name">Name</option>
-                                    <option value="Abstract">Abstract</option>
-                                    <option value="Authors">Authors</option>
-                                    <option value="Tags">Tags</option>
-                                </select>
+    <div class="my-3 container">
+        <h3 class="mt-5">Project Gallery</h3>
+        <div class="container">
+            <div class="p-3 mt-3 mb-5 bg-light text-dark row">
+                <div class="col">
+                    <form method="get" action="/projects" class="">
+                        <div class="mt-2 form-row">
+                            <div class="col">
+                                <input placeholder="Search project name, authors, abstract, tags" name="searchTerm" type="text" class="form-control form-control-lg" />
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Search by</span>
+                                    </div>
+                                    <select class="form-control form-control-lg" name="searchCategory">
+                                        <option value="Name" selected="">Name</option>
+                                        <option value="Abstract">Abstract</option>
+                                        <option value="Authors">Authors</option>
+                                        <option value="Tags">Tags</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-1">
-                        <button class="btn btn-primary">Submit</button>
-                    </div>
+                    </form>
                 </div>
-            </form>
-        </section>
-
-        <section class="container my-5">
-            <header>
-                <h2 class="d-inline-block">All Projects</h2> <span class="text-muted">(0 results)</span>
-                <hr>
-            </header>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi illum tempora saepe, odio eveniet soluta velit dolores inventore repellendus. Similique?</p>
-                        </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-secondary">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi illum tempora saepe, odio eveniet soluta velit dolores inventore repellendus. Similique?</p>
-                        </div>
-                        <div class="d-flex justify-content-around mb-3">
-                            <a href="#">#html</a>
-                            <a href="#">#css</a>
-                            <a href="#">#javascript</a>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-    </main>
-    <!-- *Footer -->
-    <footer class="footer mt-auto pt-3 pb-5 container" style="background-color: #F8F9FA;">
-        <div class="container">
-            <p class="float-right"><span class="text-muted">Project Explorer &copy; 2020</span> Edconnect</p>
+            </div>
         </div>
-    </footer>
+        <div class="mb-3 row">
+            <div class="col">
+                <h5>All Projects <small class="text-muted">(0 results)</small></h5>
+            </div>
+        </div>
+        <div class="px-0 mb-3 container">
+            <div class="d-flex flex-row">
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewProject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Author 1, Author 2
+                        </h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card" style="width: 16rem; margin-right: 10px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="viewProject.html">Project Title</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Author 1, Author 2
+                        </h6>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- *Footer -->
+    <footer class="container">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="justify-content-end navbar-collapse collapse">
+                <span class="navbar-text">Project Explorer © 2020·
+            <a href="https://edconnect.ng/" target="_blank">Edconnect</a></span>
+            </div>
+        </nav>
+    </footer>
 </body>
 
 </html>
